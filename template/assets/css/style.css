@@ -364,3 +364,8 @@ ul {
 #f a:hover {
 	color: #fdb813;
 }
+
+/* Additional */
+.hide {
+	display: none;
+}

@@ -13,11 +13,11 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
+    <script src="assets/js/jquery.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-
+    <script src="assets/scripts/subscribe.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
@@ -41,11 +41,15 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 centered">
             <h1>Welcome to our website.<br/>Sign up now to our subscribers list to receive all the latest news. No spam we promise!</h1>
-            <div class="mtb">
-              <form role="form" action="register.php" method="post" enctype="plain"> 
-                <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-                <button class='btn btn-conf btn-green' type="submit">Subscribe</button>
+            <div id="form" class="mtb">
+              <form id="email-form">
+                <input id="email" type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
+                <button id="subscribe" class='btn btn-conf btn-green'>Subscribe</button>
               </form>
+            </div>
+            <div id="success" class="hide">
+              <h2>Thank you for subscribing to our mailing list!</h2>
+              <img width="50px" src="assets/img/checked.png"></img>
             </div><!--/mt-->
             <!-- <h6>30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.</h6> -->
           </div>
