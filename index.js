@@ -19,6 +19,6 @@ app.post('/subscribe',function(req,res){
     res.end();
 });
 
-app.listen(1337, function (){
-    console.log("Server running at http://localhost:1337");
+app.listen(80, function (){
+    console.log("Server running at http://localhost:80");
 });
