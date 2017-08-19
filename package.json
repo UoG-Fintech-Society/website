@@ -1,7 +1,7 @@
 {
     "name": "uog-fintech-soc-webapp",
     "description": "UoG Fintech Society Node web ap",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": true,
     "license": "MIT",
     "author": "Microsoft",
@@ -9,7 +9,7 @@
         "node": ">=6.9.1"
     },
     "scripts": {
-        "start": "npm install;node index.js"
+        "start": "node index.js"
     },
     "dependencies": {
         "body-parser": "^1.17.2",
