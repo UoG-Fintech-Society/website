@@ -377,3 +377,141 @@ ul {
 .founding-members-links {
 	margin-left: 10px;
 }
+
+.top-bar {
+	background: #fdb813;
+
+	padding-top: 110px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	color: white;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-bar .logo {
+	top: 30px;
+	left: 45px;
+	font-size: 18px;
+	font-weight: 900;
+	position:absolute; 
+}
+
+.top-bar .social {
+	top: 30px;
+	right: 45px;
+	font-size: 20px;
+	position: absolute;
+}
+
+.top-bar .social i {
+	margin-left: 20px;
+}
+
+.top-bar .social a {
+	color: white;
+}
+
+.top-bar h1 {
+	font-weight: 700;
+	color: white;
+	font-size: 40px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+span.bold-colored {
+	font-weight: bold;
+	color: #fdb813;
+}
+
+.darker-bg {
+	background-color: #eaeaea;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+/*---------------------------hover---------------------*/
+#open-popup {padding:20px}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 1150px;
+}
+
+.a a img.img-responsive {
+	opacity: 0.5;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.a a:hover img.img-responsive{
+	opacity: 1;
+}
+.a a .img-hover {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    right: 15px;
+    bottom: 0px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+	.a a .img-hover {
+	top: 0px;
+	bottom: 0px;
+	}
+}
+
+.a a:hover .img-hover {
+	opacity: 0;
+}
+.a a .img-hover.yellow {
+    background: #fdb813;
+}
+.a a .img-hover .c-table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.a a .img-hover .c-table .ct-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.a a .img-hover .c-table .ct-cell .img-title {
+	display: block;
+	letter-spacing: 5px;
+	transition: all 0.5s cubic-bezier(0.81, -0.14, 0.47, 1)
+}
+
+.a a:hover .img-hover .c-table .ct-cell .img-title .img-subtitle {
+    display: none;
+}
+
+/*---------------------------popup----------------------------*/
