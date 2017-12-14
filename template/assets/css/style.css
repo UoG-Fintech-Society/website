@@ -176,6 +176,37 @@ input {
 	color: white
 }
 
+/* Navbar */
+.navbar-inverse{
+	/* background:#222B31 !important; */
+	border-bottom:4px solid #fdb813 !important;
+}
+
+header {
+	color: white;
+}
+
+header .logo {
+	padding: 8px;
+
+	font-size: 18px;
+	font-weight: 900;
+}
+
+header .logo img {
+	margin-right: 16px;
+}
+
+header .social {
+	margin-top: 15px;
+	margin-right: 45px;
+	font-size: 20px;
+}
+
+header .social i {
+	margin-left: 20px;
+}
+
 /* HEADER SECTION */
 #h {
 	background: url(../img/header.jpg) no-repeat center top;
