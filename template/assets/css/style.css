@@ -345,7 +345,6 @@ ul {
 	list-style-type: none;
 }
 
-/* SPONSORS */
 #g {
 	background: #f2f2f2;
 	padding-top: 60px;
@@ -781,4 +780,19 @@ span.bold-colored {
 	letter-spacing: 1px;
 	line-height: 20px;
 	margin-top: 20px;
+}
+
+.sponsors {
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+
+#external_links {
+	background: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.sponsors img {
+	margin-right: 16px;
 }
