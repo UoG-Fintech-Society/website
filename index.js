@@ -11,33 +11,33 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.get('/',function (req,res){
+app.get('/', function (req, res) {
     res.sendFile("index.html");
 });
 
 // Mailchimp settings 
-var mailchimpInstance   = 'us16',
-    listUniqueId        = '73db9aabe6',
-    mailchimpApiKey     = '5e9927aeec9aa3802e5c21a3b2c6ece7-us16';
+var mailchimpInstance = 'us16',
+    listUniqueId = '73db9aabe6',
+    mailchimpApiKey = '5e9927aeec9aa3802e5c21a3b2c6ece7-us16';
 
 app.post('/subscribe', function (req, res) {
     request
         .post('https://' + mailchimpInstance + '.api.mailchimp.com/3.0/lists/' + listUniqueId + '/members/')
         .set('Content-Type', 'application/json;charset=utf-8')
-        .set('Authorization', 'Basic ' + new Buffer('any:' + mailchimpApiKey ).toString('base64'))
+        .set('Authorization', 'Basic ' + new Buffer('any:' + mailchimpApiKey).toString('base64'))
         .send({
-          'email_address': req.body.email,
-          'status': 'pending'
+            'email_address': req.body.email,
+            'status': 'pending'
         })
-            .end(function(err, response) {
-                if (response.status < 300) {
-                    res.send('SENT_CONFIRMATION');
-                } else if (response.status === 400 && response.body.title === "Member Exists") {
-                    res.send('ALREADY_EXISTS');
-                } else {
-                    res.send('ERROR');
-                }
-          });
+        .end(function (err, response) {
+            if (response.status < 300) {
+                res.send('SENT_CONFIRMATION');
+            } else if (response.status === 400 && response.body.title === "Member Exists") {
+                res.send('ALREADY_EXISTS');
+            } else {
+                res.send('ERROR');
+            }
+        });
 });
 
 // app.post('/subscribe',function(req,res){
@@ -45,9 +45,9 @@ app.post('/subscribe', function (req, res) {
 //     res.end();
 // });
 
-var portNumber =  process.env.port || process.env.PORT || 1337
+var portNumber = process.env.port || process.env.PORT || 1337;
 
-app.listen(portNumber, function (){
-    console.log("Server running at http://localhost:%d",portNumber);
+app.listen(portNumber, function () {
+    console.log("Server running at http://localhost:%d", portNumber);
 });
 
