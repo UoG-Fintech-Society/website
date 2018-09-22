@@ -717,6 +717,11 @@ span.bold-colored {
 	width: 100%;
 }
 
+.movepicleft {
+	position: relative;
+	left: 10px;
+}
+
 .aftp-title {
 	position: relative;
 	left: 50%;
