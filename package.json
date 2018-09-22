@@ -1,6 +1,6 @@
 {
   "name": "uog-fintech-soc-webapp",
-  "description": "UoG Fintech Society Node web ap",
+  "description": "UoG Fintech Society Node web app",
   "version": "0.0.2",
   "private": true,
   "license": "MIT",
@@ -9,7 +9,8 @@
     "node": ">=6.9.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "e2e": "ng e2e"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
