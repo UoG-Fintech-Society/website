@@ -45,7 +45,7 @@ app.post('/subscribe', function (req, res) {
 //     res.end();
 // });
 
-var portNumber =  process.env.port || process.env.PORT || 1337
+var portNumber =  process.env.port || process.env.PORT || 3000
 
 app.listen(portNumber, function (){
     console.log("Server running at http://localhost:%d",portNumber);
